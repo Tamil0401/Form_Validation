@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to include padding and border in element's total width and height */
+}
+
+#form-validate{
+    border: 1px solid rgb(202, 198, 198);
+    width: 30vw; /* 30% of viewport width */
+    min-width: 300px; /* minimum width */
+    height: 60vh; /* 60% of viewport height */
+    box-shadow: 2px 2px 5px pink;
+    margin: auto; /* center the form horizontally */
+    display: grid;  /* use grid layout */
+    padding: 20px; /* padding inside the form */
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    margin-top: 100px;
+}
+
+#form-validate > .form-control{
+   display: flex;
+   flex-direction: column;
+}
+
+#form-validate > .form-control > span{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; 
+    height: 18px; /* to reserve space even when there's no error message */
+}
+
+#form-validate > .form-control > label{
+    font-size: 20px; 
+}
+
+#form-validate > .form-control > input{
+    height: 30px; 
+    margin-top: 10px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border-radius: 5px; /* rounded corners */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(211, 207, 207);
+}
+
+#form-validate > button{
+    height: 35px;
+    background-color: rgb(39, 196, 55);
+    color: white;
+    border-radius: 5px; /* rounded corners */
+    font-size: 20px; 
+}
